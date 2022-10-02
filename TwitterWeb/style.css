@@ -231,3 +231,41 @@ main {
     width: 100%;
     margin-left: 12px;
 }
+
+.feed-tweet i {
+    color: rgb(110, 118, 125);
+    font-size: 2rem;
+}
+
+.tweeter-details {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+.tweeter-details a {
+    font-weight: 700;
+}
+
+.tweeter-details span {
+    color: rgb(110, 118, 125);
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-left: 3px;
+}
+
+.tweet-text {
+    color: white;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.tweet-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 15px 0;
+    padding-right: 50px;
+}
+
