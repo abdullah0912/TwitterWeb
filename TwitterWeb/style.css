@@ -54,7 +54,7 @@ header {
     margin-right: 15px;
 }
 
-.nav-links a:hover {
+.nav-links a:hover, .main-account:hover {
     background-color: rgb(47, 51, 54);
     border-radius: 9999px;
 }
@@ -96,8 +96,9 @@ header {
 .main-account a {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 8px 10px 8px 15px;
-    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .tweet-img {
@@ -110,4 +111,123 @@ header {
 .account-details {
     display: flex;
     flex-direction: column;
+    flex-basis: 70%;
+    margin-left: 10px;
+    font-size: 1.5rem;
+    line-height: 20px;
+}
+
+.account-name {
+    font-weight: 500;
+}
+
+.account-handle {
+    color: rgb(110, 118, 125);
+}
+
+main {
+    width: 71%;
+    height: 100%;
+    margin-left: 29%;
+}
+
+.main-flex {
+    display: flex;
+    width: 100%;
+}
+
+.main-feed {
+    width: 50%;
+    border-left: 1px solid rgb(47, 51, 54);
+    border-right: 1px solid rgb(47, 51, 54);
+}
+
+.home-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+    width: 100%;
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 0 15px;
+    position: sticky;
+    top: 0;
+    background-color: black;
+}
+
+.new-tweet {
+    display: flex;
+    width: 100%;
+    height: 120px;
+    padding: 4px 16px;
+}
+
+.new-tweet .tweet-img {
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+}
+
+.new-tweet-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 4px;
+    width: 100%;
+    margin-left: 12px;
+}
+
+.new-tweet-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+}
+
+.new-tweet-actions ul {
+    display: flex;
+    list-style: none;
+}
+
+.new-tweet-details input {
+    width: 100%;
+    height: 24px;
+    background-color: black;
+    font-size: 2rem;
+    border: none;
+    color: white;
+    outline: none;
+}
+
+.new-tweet-actions ul li {
+    margin-right: 12px;
+    color: #1c88d2;
+    cursor: pointer;
+}
+
+.new-tweet-actions .tweet-button {
+    width: 75px;
+    height: 35px;
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.feed-tweet {
+    display: flex;
+    width: 100%;
+    min-height: 100px;
+    padding: 12px 16px 0 16px;
+    border-top: 1px solid rgb(47, 51, 54);
+    cursor: pointer;
+}
+
+.feed-tweet-details {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 12px;
 }
